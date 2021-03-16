@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
         * {
-            box-sizing: border-box;
+            box-sizing: border-box !important;
         }
 
         body {
@@ -30,7 +30,7 @@
 
         div,
         p,
-        img {
+        img, h2, h3{
             margin: 0;
             padding: 0;
         }
@@ -68,7 +68,24 @@
             padding: 0 40px 0 40px;
         }
 
+        .btn {
+            margin: 0 auto;
+            width: 240px;
+            display: block;
+            background: #9D5CD0;
+            color: #fff;
+            outline: none;
+            border: none;
+            border-radius: 48px;
+            padding: 15px 0;
+            margin-top: 35px;
+            margin-bottom: 31px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
         @media (max-width: 600px) {
+        
             .table-600 {
                 width: 280px !important;
             }
@@ -76,16 +93,41 @@
             .table-520 {
                 width: 244px !important;
             }
+  
+            .content {
+                margin-bottom: 31px !important;
+            }
+
+            h3 {
+                margin-top: 11px !important;
+                margin-bottom: 2px;
+            }
+
+            .textBlock {
+                width : 217px;
+                margin-bottom: 24px !important;
+            }
+
+            .paintersTitle {
+                margin-bottom: 8px;
+            }
+
+            .chekboxText{
+                width: 242px !important;
+            }
 
             .logo-img {
                 width: 114px !important;
                 height: 26px !important;
-                margin-top: 17px;
-                margin-bottom: 17px
+                margin : 17px 80px 17px 80px !important;
+            }
+
+            .table-138 {
+                height: 107px !important;
             }
 
             .hero-img {
-                width: 280px !important;
+                width: 100% !important;
                 height: 300px !important;
             }
 
@@ -96,6 +138,14 @@
             .painters-img {
                 width: 244px !important;
                 height: 84px !important;
+            }
+
+            .btn {
+                margin-top: 22px;
+            }
+
+            .ylka {
+                width: 280px !important;
             }
         }
     </style>
@@ -115,13 +165,12 @@
     </div>
     <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
         <tr>
-            <td>
+            <td class="ylka">
                 <table align="center" class="table-600" cellpadding="0" cellspacing="0" width="600" bgcolor="#000000">
                     <tr>
-                        <td align="center">
-                            <a href="https://imgbb.com/"><img src="https://i.ibb.co/rscMXxv/image.png" alt="logo"
+                        <td align="center" class="logo">
+                           <img src="https://i.ibb.co/rscMXxv/image.png" alt="logo"
                                     weight="188" height="42" class="logo-img" />
-                            </a>
                         </td>
                     </tr>
                 </table>
@@ -161,7 +210,7 @@
 													line-height: 24px;
 													font-weight: 400;
 													color: #515151;
-													margin-bottom: 10px;
+													margin-bottom: 12px;
 												">
                                             Опыт говорит нам, что семантический разбор внешних противодействий
                                             требует анализа новых принципов формирования материально-технической
@@ -177,8 +226,8 @@
 													line-height: 24px;
 													font-weight: 400;
 													color: #515151;
-                                                    margin-bottom: 36px;
-												">
+                                                    margin-bottom: 37px;
+												" class="content">
                                             Задача организации, в особенности же внедрение современных методик,
                                             в своём классическом представлении, допускает внедрение
                                             глубокомысленных рассуждений. Есть над чем задуматься: элементы
@@ -209,8 +258,8 @@
 													line-height: 24px;
 													font-weight: 400;
 													color: #ffffff;
-													margin-top: 26px;
-                                                    margin-bottom: 21px;
+													margin-top: 20px;
+                                                    margin-bottom: 20px;
 												">
                                             Представленные художники
                                         </h2>
@@ -224,7 +273,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <h3 class="test" style="
+                                        <h3 style="
                                         font-family: 'Arial', Tahoma, sans-serif;
                                         font-size: 12px;
                                         line-height: 24px;
@@ -266,7 +315,6 @@
                                         font-weight: 700;
                                         color: #ffffff;
                                         margin-top: 21px;
-                                        margin-bottom: 4px;
                                     ">
                                             Огюст Ренуар
                                         </h3>
@@ -281,7 +329,7 @@
                                         font-weight: 400;
                                         color: #ffffff;
                                         margin-bottom: 21px;
-                                    ">
+                                    " class="textBlock">
                                             А также сделанные на базе интернет-аналитики выводы освещают чрезвычайно
                                             интересные особенности картины в целом.
                                         </p>
@@ -302,7 +350,6 @@
                                         font-weight: 700;
                                         color: #ffffff;
                                         margin-top: 21px;
-                                        margin-bottom: 4px;
                                     ">
                                             Клод Моне
                                         </h3>
@@ -338,8 +385,7 @@
                                         font-weight: 700;
                                         color: #ffffff;
                                         margin-top: 21px;
-                                        margin-bottom: 4px;
-                                    ">
+                                    " class="paintersTitle">
                                             Эдуард Мане
                                         </h3>
                                     </td>
@@ -374,8 +420,7 @@
                                         font-weight: 700;
                                         color: #ffffff;
                                         margin-top: 21px;
-                                        margin-bottom: 4px;
-                                    ">
+                                    " class="paintersTitle">
                                             Винсент Ван Гог
                                         </h3>
                                     </td>
@@ -389,7 +434,7 @@
                                         font-weight: 400;
                                         color: #ffffff;
                                        margin-bottom: 26px;
-                                    ">
+                                    " class="textBlock">
                                             Повседневная практика показывает, что разбавленное изрядной долей эмпатии,
                                             рациональное мышление требует анализа поставленных обществом задач.
                                         </p>
@@ -415,8 +460,8 @@
 													line-height: 24px;
 													font-weight: 400;
 													color: #515151;
-													margin-top: 32px;
-                                        
+													margin-top: 30px;
+                                                    margin-bottom: 10px;
 												">
                                             И это ещё не всё!
                                         </h2>
@@ -424,13 +469,13 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <table align="left" class="table-138" cellpadding="0" cellspacing="0"
-                                            width="138" height="113">
+                                        <table class="table-138" cellpadding="0" cellspacing="0" width="163"
+                                            style="display: inline-block;" height="113">
                                             <tr>
                                                 <td>
                                                     <img class="check-img"
                                                         src="https://i.ibb.co/GHx2yVt/check-square.png"
-                                                        alt="check-square" width="30" height="30" />
+                                                        alt="check-square" width="35" height="35" />
                                                 </td>
                                             </tr>
                                             <tr>
@@ -441,61 +486,61 @@
 													line-height: 18px;
 													font-weight: 400;
 													color: #515151;
-													margin-top: 10px;
+													margin-top: 12px;
                                                     padding-bottom: 10px;
-												">
+                                                    width: 138px;
+												" class="chekboxText">
                                                         Уникальные подборки работ с авторскими рецензиями
                                                     </p>
                                                 </td>
                                             </tr>
                                         </table>
-                                    </td>
-                                    <td>
-                                        <table align="left" class="table-138" cellpadding="0" cellspacing="0"
-                                            width="138" height="113">
+                                        <table class="table-138" cellpadding="0" cellspacing="0" width="161"
+                                            style="display: inline-block; margin-right: 20px;" height="113">
                                             <tr>
                                                 <td>
                                                     <img class="check-img" src="https://i.ibb.co/kHY114H/calendar.png"
-                                                        alt="check-square" width="30" height="30" />
+                                                        alt="check-square" width="35" height="35" />
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <p style="
-													font-family: 'Arial', Tahoma, sans-serif;
-													font-size: 12px;
-													line-height: 18px;
-													font-weight: 400;
-													color: #515151;
-													margin-top: 10px;
-                                                    padding-bottom: 10px;
-												">
+                                                font-family: 'Arial', Tahoma, sans-serif;
+                                                font-size: 12px;
+                                                line-height: 18px;
+                                                font-weight: 400;
+                                                color: #515151;
+                                                margin-top: 12px;
+                                                padding-bottom: 10px;
+                                                width: 138px;
+                                            " class="chekboxText">
                                                         Возможность настроить нашу рассылку под свой личный вкус
                                                     </p>
                                                 </td>
                                             </tr>
                                         </table>
-                                    </td>
-                                    <td>
-                                        <table align="left" class="table-138" cellpadding="0" cellspacing="0"
-                                            width="138" height="113">
+                                        <table class="table-138" cellpadding="0" cellspacing="0" width="138"
+                                            style="display: inline-block;" height="113">
                                             <tr>
                                                 <td>
                                                     <img class="check-img"
                                                         src="https://i.ibb.co/wCR21fJ/arrow-up-circle.png"
-                                                        alt="check-square" width="30" height="30" />
+                                                        alt="check-square" width="35" height="35" />
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <p style="
-													font-family: 'Arial', Tahoma, sans-serif;
-													font-size: 12px;
-													line-height: 18px;
-													font-weight: 400;
-													color: #515151;
-													margin-top: 16px;
-												">
+                                            font-family: 'Arial', Tahoma, sans-serif;
+                                            font-size: 12px;
+                                            line-height: 18px;
+                                            font-weight: 400;
+                                            color: #515151;
+                                            margin-top: 12px;
+                                            padding-bottom: 10px;
+                                            width: 138px;
+                                        " class="chekboxText">
                                                         У вас есть пожелания и предложения?
                                                         Напишите нам в ответ на это письмо!
                                                     </p>
@@ -504,13 +549,66 @@
                                         </table>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <button class="btn">Узнать все подробности</button>
+                                    </td>
+                                </tr>
                             </table>
                         </td>
                     </tr>
                 </table>
             </td>
         </tr>
-
+        <tr>
+            <td>
+                <table align="center" class="table-600" cellpadding="0" cellspacing="0" width="600" height="100"
+                    bgcolor="#000000">
+                    <tr>
+                        <td class="container">
+                            <table align="center" width="240" class="table-247" cellpadding="0" cellspacing="0" style="margin-top: 13px;">
+                                <tr style="padding-top: 10px;" height="50">
+                                    <td style="padding-left : 48px;">
+                                        <img class="contacts-img" src="https://i.ibb.co/s5nx1X8/Vector.png" alt="vk"
+                                            width="35" height="35" />
+                                    </td>
+                                    <td style="padding-right : 10px;">
+                                        <img class="contacts-img" src="https://i.ibb.co/6Ys0MZZ/instagram.png" alt="vk"
+                                            width="35" height="35" />
+                                    </td>
+                                    <td style="padding-right : 31px;">
+                                        <img class="contacts-img" src="https://i.ibb.co/3dh91p9/fb.png" alt="vk"
+                                            width="35" height="35" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" align="center">
+                                        <div
+                                            style="color : #757575; font-weight : 400; font-size : 12px; padding-bottom: 4px; letter-spacing: -0.2px;">
+                                            Blanchard &copy; 2020 / Все права защищены</div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table align="center" class="table-600" cellpadding="0" cellspacing="0" width="600" height="21">
+                    <tr>
+                        <td align="center">
+                            <div style="color: #757575; font-size: 10px; letter-spacing: 0.8px;">Вы можете так же
+                                 <a href="" style="color : #9D5CD0;">
+                                    отписаться от рассылки
+                                 </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
     </table>
 </body>
 
